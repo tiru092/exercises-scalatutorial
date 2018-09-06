@@ -185,9 +185,9 @@ object TermsAndTypes extends ScalaTutorialSection {
   def moreMethods(res0: String, res1: Boolean, res2: String): Unit = {
     16.toHexString shouldBe res0
     (0 to 10).contains(10) shouldBe true
-    (0 until 10).contains(10) shouldBe res1
+    (0 until 10).contains(10) shouldBe false
     "foo".drop(1) shouldBe "oo"
-    "bar".take(2) shouldBe res2
+    "bar".take(2) shouldBe "ba"
   }
 
 }
